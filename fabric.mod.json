@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "ultraopt",
+  "version": "${version}",
+  "name": "Ultra Optimizer",
+  "description": "Entity occlusion culling, particle culling, lightest settings and adaptive render distance.",
+  "authors": ["Yulia"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.ultraopt.UltraOptClient"]
+  },
+  "mixins": [
+    { "config": "ultraopt.mixins.json", "environment": "client" }
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.1",
+    "minecraft": "~26.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
